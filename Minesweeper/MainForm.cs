@@ -1,5 +1,8 @@
 namespace Minesweeper
 {
+    /// <summary>
+    /// Represents main game form.
+    /// </summary>
     public partial class MainForm : Form
     {
         private Minefield? minefield;
@@ -25,6 +28,9 @@ namespace Minesweeper
         private int columnCount = 20;
         private Minefield.Difficulty difficulty = Minefield.Difficulty.Medium;
 
+        /// <summary>
+        /// Initializes new <see cref="MainForm"/> instance.
+        /// </summary>
         public MainForm()
         {
             InitializeComponent();

@@ -1,22 +1,37 @@
 ﻿namespace Minesweeper
 {
+    /// <summary>
+    /// Represents dialog to input settings of new game.
+    /// </summary>
     public partial class NewGameDialog : Form
     {
+        /// <summary>
+        /// Initializes new <see cref="NewGameDialog"/> instance.
+        /// </summary>
         public NewGameDialog()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Gets the selected row count.
+        /// </summary>
         public int RowCount
         {
             get { return Convert.ToInt32(numericRows.Value); }
         }
 
+        /// <summary>
+        /// Gets the selected column count.
+        /// </summary>
         public int ColumnCount
         {
             get { return Convert.ToInt32(numericColumns.Value); }
         }
 
+        /// <summary>
+        /// Gets the selected minefield difficulty.
+        /// </summary>
         public Minefield.Difficulty Difficulty
         {
             get
